@@ -13,4 +13,19 @@ describe('Item', () => {
     const item2 = new Item(2, 'watch', 100);
     assert.strictEqual(item1.equals(item2), false);
   });
+
+  it('should return the id of an item', () => {
+    const item = new Item(1, 'watch', 100);
+    assert.deepStrictEqual(item.getId(), 1);
+  });
+
+  it('should return the name of an item', () => {
+    const item = new Item(1, 'watch', 100);
+    assert.deepStrictEqual(item.getName(), 'watch');
+  });
+
+  it('should return the price of an item', () => {
+    const item = new Item(1, 'watch', 100);
+    assert.deepStrictEqual(item.getPrice(), 100);
+  });
 });

@@ -11,6 +11,18 @@ class Item {
       this.name === anotherItem.name &&
       this.price === anotherItem.price;
   }
+
+  getId() {
+    return this.id;
+  }
+
+  getName() {
+    return this.name;
+  }
+
+  getPrice() {
+    return this.price;
+  }
 }
 
 exports.Item = Item;
