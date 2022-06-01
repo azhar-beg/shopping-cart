@@ -1,9 +1,10 @@
 - **TODO**
-  - [ ] Create `add` method in `Cart` class to add a new item
+  - [ ] Create `totalPrice` method in `Cart` class
 
 - **MAYBE**
 
 - **DONE**
+  - [x] Create `add` method in `Cart` class to add a new item
   - [x] Create `Cart` entity with property `list`.
   - [x] Create `getPrice`, `getName` and `getId` for `Item` entity.
   - [x] Create an entity `Item`.

@@ -31,4 +31,16 @@ describe('Cart', () => {
     cart2.items.push(item1);
     assert.strictEqual(cart1.equals(cart2), false);
   });
+
+  it('should add given item in cart', () => {
+    const item = new Item(1, 'watch', 100);
+
+    const actualCart = new Cart();
+    actualCart.items.push(item);
+
+    const expectedCart = new Cart();
+    expectedCart.add(item);
+
+    assert.ok(actualCart.equals(expectedCart));
+  });
 });
