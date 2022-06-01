@@ -1,9 +1,11 @@
 - **TODO**
-  - [ ] Create `totalPrice` method in `Cart` class
+  - [ ] Create `remove` method in `Cart` to remove an item from the cart
 
 - **MAYBE**
 
 - **DONE**
+  - [x] Add `.eslintrc.json` 
+  - [x] Create `totalPrice` method in `Cart` class
   - [x] Create `add` method in `Cart` class to add a new item
   - [x] Create `Cart` entity with property `list`.
   - [x] Create `getPrice`, `getName` and `getId` for `Item` entity.

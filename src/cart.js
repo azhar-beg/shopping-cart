@@ -12,6 +12,11 @@ class Cart {
   add(item) {
     this.items.push(item);
   }
+
+  totalPrice() {
+    return this.items.reduce((total, item) => total + item.getPrice(), 0);
+
+  }
 }
 
 exports.Cart = Cart;
