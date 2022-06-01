@@ -28,4 +28,10 @@ describe('Item', () => {
     const item = new Item(1, 'watch', 100);
     assert.deepStrictEqual(item.getPrice(), 100);
   });
+
+  it('Should return true when item isOf given id', () => {
+    const item = new Item(1, 'watch', 100);
+    assert.ok(item.isOf(1));
+  });
+
 });

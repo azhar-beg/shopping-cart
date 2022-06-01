@@ -13,10 +13,14 @@ class Cart {
     this.items.push(item);
   }
 
+  remove(id) {
+    this.items = this.items.filter((item) => !item.isOf(id));
+  }
+
   totalPrice() {
     return this.items.reduce((total, item) => total + item.getPrice(), 0);
-
   }
+
 }
 
 exports.Cart = Cart;

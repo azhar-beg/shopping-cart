@@ -16,6 +16,10 @@ class Item {
     return this.id;
   }
 
+  isOf(id) {
+    return this.id === id;
+  }
+
   getName() {
     return this.name;
   }

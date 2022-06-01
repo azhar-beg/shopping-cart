@@ -56,4 +56,16 @@ describe('Cart', () => {
     assert.deepStrictEqual(cart.totalPrice(), 600);
   });
 
+  it('Should remove item of given id', () => {
+    const item = new Item(1, 'watch', 100);
+
+    const actualCart = new Cart();
+    actualCart.items.push(item);
+    actualCart.remove(1);
+
+    const expectedCart = new Cart();
+
+    assert.ok(actualCart.equals(expectedCart));
+  });
+
 });
