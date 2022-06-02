@@ -1,3 +1,5 @@
+const { CartItem } = require('./cartItem.js');
+
 class Cart {
   #items;
   constructor() {
@@ -11,8 +13,12 @@ class Cart {
         item.equals(anotherCart.#items[index]));
   }
 
-  add(item) {
-    this.#items.push(item);
+  add(item, quantity) {
+    const id = item.getId();
+    const name = item.getName();
+    const price = item.getPrice();
+    const cartItem = new CartItem(id, name, price, quantity);
+    this.#items.push(cartItem);
   }
 
   remove(id) {
@@ -22,7 +28,7 @@ class Cart {
   }
 
   totalPrice() {
-    return this.#items.reduce((total, item) => total + item.getPrice(), 0);
+    return this.#items.reduce((total, item) => total + item.totalPrice(), 0);
   }
 
 }

@@ -1,9 +1,9 @@
 - **TODO**
-  - [ ] Use `CartItem` in `Cart`
-
+  - [ ] Add `increaseQuantity` and `decreaseQuantity` method in `Cart`
 - **MAYBE**
 
 - **DONE**
+  - [x] Use `CartItem` in `Cart`
   - [x] Create `totalPrice` method for `CartItem` class
   - [x] Separate `InventoryItem` and `CartItem` entities
   - [x] Modified `remove` method

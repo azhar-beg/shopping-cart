@@ -21,4 +21,10 @@ describe('CartItem', () => {
     item = new CartItem(1, 'watch', 150, 1);
     assert.deepStrictEqual(item.totalPrice(), 150);
   });
+
+  it('Should return true when item isOf given id', () => {
+    const item = new CartItem(1, 'watch', 100);
+    assert.ok(item.isOf(1));
+  });
+
 });

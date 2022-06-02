@@ -25,6 +25,11 @@ class CartItem {
   totalPrice() {
     return this.#price * this.#quantity;
   }
+
+  isOf(id) {
+    return this.#id === id;
+  }
+
 }
 
 exports.CartItem = CartItem;
