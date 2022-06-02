@@ -1,9 +1,9 @@
 - **TODO**
-  - [ ] Separate `InventoryItem` and `CartItem` entities
-
+  - [ ] Create `totalPrice` method for `CartItem` class
 - **MAYBE**
 
 - **DONE**
+  - [x] Separate `InventoryItem` and `CartItem` entities
   - [x] Modified `remove` method
   - [x] Made class properties private
   - [x] Create `remove` method in `Cart` to remove an item from the cart
