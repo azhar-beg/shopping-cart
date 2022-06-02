@@ -4,6 +4,8 @@
 - **MAYBE**
 
 - **DONE**
+  - [x] Modified `remove` method
+  - [x] Made class properties private
   - [x] Create `remove` method in `Cart` to remove an item from the cart
   - [x] Add `.eslintrc.json` 
   - [x] Create `totalPrice` method in `Cart` class
