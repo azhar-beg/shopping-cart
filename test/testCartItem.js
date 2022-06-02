@@ -13,4 +13,12 @@ describe('CartItem', () => {
     const item2 = new CartItem(1, 'watch', 100, 1);
     assert.strictEqual(item1.equals(item2), false);
   });
+
+  it('Should calculate total price of item based on quantity', () => {
+    let item = new CartItem(1, 'watch', 100, 2);
+    assert.deepStrictEqual(item.totalPrice(), 200);
+
+    item = new CartItem(1, 'watch', 150, 1);
+    assert.deepStrictEqual(item.totalPrice(), 150);
+  });
 });

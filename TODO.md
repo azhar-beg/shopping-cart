@@ -1,8 +1,10 @@
 - **TODO**
-  - [ ] Create `totalPrice` method for `CartItem` class
+  - [ ] Use `CartItem` in `Cart`
+
 - **MAYBE**
 
 - **DONE**
+  - [x] Create `totalPrice` method for `CartItem` class
   - [x] Separate `InventoryItem` and `CartItem` entities
   - [x] Modified `remove` method
   - [x] Made class properties private

@@ -21,6 +21,10 @@ class CartItem {
     return anotherItem instanceof CartItem &&
       this.#arePropertiesEqual(anotherItem);
   }
+
+  totalPrice() {
+    return this.#price * this.#quantity;
+  }
 }
 
 exports.CartItem = CartItem;
